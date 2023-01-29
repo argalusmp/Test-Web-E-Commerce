@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+
+* {
+  color: black;
+  box-sizing: border-box;
+}
+.navbar-brand {
+  font-family: "Libre Baskerville", serif;
+}
+.container-all {
+  margin: 10px 20px;
+}
+.card_content {
+  margin: 5px 10px;
+}
+.card-footer img {
+  width: 30px;
+  height: 30px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.card:hover {
+  /* box-shadow: 2px 20px 35px 0px rgba(21, 162, 172, 0.1); */
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #314b4d, 2px -2px #314b4d, 3px -3px #314b4d,
+      4px -4px #314b4d, 5px -5px #314b4d, 6px -6px #314b4d, 7px -7px #314b4d,
+      8px -8px #314b4d;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+
+.button-cart {
+  background-color: #629996d7;
+  border: 1;
+  border-radius: 30% 50%;
+  box-shadow: 2px 2px 2px burlywood;
+}
+
+.button-cart:active {
+  background-color: #3e8e41;
+  box-shadow: 2px 2px 2px 1px #666;
+  transform: translate3d(3px, 3px, 1px);
+}
+
+/* pagination */
+.pagination1 {
+  padding: 20px 30px;
+  margin: 15px 15px;
+}
+.page_number {
+  text-align: center;
+}
+.pagination1 a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* cart catalog */
+
+.card_catalog {
+  margin: 30px 18px;
+}
+
+/* cart belanja */
+
+.keranjang_belanja {
+  margin: 15px 50px;
+}
+
+/* footer */
+.about {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+.about:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.deskripsi {
+  width: 70%;
+  text-align: start;
+}
+.more {
+  width: 30%;
+}
+.more h3 {
+  text-align: center;
+}
+.more ul li {
+  list-style: none;
+  text-align: center;
+  color: inherit;
+}
+.more ul li a {
+  text-decoration: none;
+  color: inherit;
+}
